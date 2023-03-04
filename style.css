@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Hind+Siliguri:wght@300;400&family=Inter:wght@300;400;500;600;700&family=Lilita+One&family=Lobster&family=Noto+Serif&family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 2rem;
+    z-index: -1;
+}
+
+.navigation > a {
+    margin-right: 1.5rem;
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: medium;
+}
+
+a:active, a:hover {
+    color: #1b9bff;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #ff1867;
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 35px #ff1867;
+}
+
+.search {
+    margin-right: 3rem;
+}
+
+section {
+    height: 40rem;
+    position: relative;
+    width: 100%;
+}
+
+.home {
+    background-image: url('/images/home-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #303030;
+    z-index: 1;
+    color: #fff;
+    background-blend-mode: multiply;
+}
+
+.home .content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.content > h1 {
+    font-size: 3.5rem;
+}
+
+.category {
+    height: 40rem;
+}
+
+.category-container {
+    margin: 10% auto;
+    width: 70%;
+}
+
+.category-container > .content > .subtitle {
+    font-size: large;
+    word-spacing: 0.4rem;
+    font-weight: 400;
+}
+
+.bar {
+    border-bottom: solid #303030;
+    width: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    line-height: 2rem;
+}
+
+.flex-item > h3 {
+    text-transform: uppercase;
+}
+
+.flex-item > p {
+    font-weight: 400;
+}
+
+.flex-item > button {
+    width: 7rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+    color: #fff;
+    background-color: #303030;
+    border: none;
+    font-size: medium;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 0.2rem; 
+}
+
+.brands {
+    background-image: url('images/home-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #303030;
+    filter: grayscale(100%);
+    color: #fff;
+    background-blend-mode: multiply;
+    width: 100%;
+}
+
+.bar-brand {
+    border-bottom: solid #fff;
+    width: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.brands-container {
+    position: relative;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.brands-container > .content > .subtitle {
+    font-size: large;
+    font-weight: 400;
+    word-spacing: 0.4rem;
+}
+
+
+
+.brands-container > .box > .flex-item {
+    color: #949494;
+    font-size: 2rem;
+}
+
+
+img {
+    filter: grayscale(100%);
+}
+
+.stories-container {
+    position: relative;
+    width: 70%;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.stories-container > .content > .subtitle {
+    font-size: large;
+    font-weight: 400;
+    word-spacing: 0.4rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5rem;
+    column-gap: 5rem;
+}
+
+.grid-item > h3 {
+    font-weight: 600;
+}
+
+.image-block img {
+    height: 20rem; 
+    width: 30rem;
+}
+
+.learn {
+    height: 7rem;
+    transform: translate(0%,705%);
+}
+
+.learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right,#047ad6,#04a9ee);
+    height: 7rem;
+    color: #fff;
+}
+
+.learn-more > h3 {
+    font-weight: 500;
+}
+
+.learn-more button {
+    margin-left: 2rem;
+    background-color: #e3e3e3;
+    color:rgb(59, 59, 59);
+    border: none;
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    font-size: medium;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 0.2rem; 
+}
+
+.footer-container {
+    position: relative;
+    top: 142%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    color: #fff;
+    height: 15rem;
+}
+
+.footer-container div {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.footer-logo > img {
+    filter: invert(1);
+}
+
+.footer-bar {
+    border-bottom: solid #fff;
+    width: 2rem;
+    display: inline-block;
+}
+
+.footer-content > span {
+    margin-right: 1rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 850px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #303030;
+        margin: 6px 0;
+    }
+
+    .navigation{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #fefefe;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    .navigation.active{
+        height: 450px;
+    }
+
+    .navigation.active a{
+        opacity: 1;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .navigation > a {
+        display: block;
+        width: fit-content;
+        margin: 60px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .home {
+        height: 30rem;
+    }
+
+    .home .content {
+        position: relative;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .content > h1 {
+        font-size: 2rem;
+    }
+
+    .content > .subtitle {
+        font-size: small;
+        word-wrap: break-word;
+    }
+
+    .category-container{
+        position: relative;
+    }
+
+    .category-container > .content > .subtitle {
+        font-size: 1rem;
+        word-spacing: 0.1rem;
+    }
+
+    .box {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .flex-item {
+        line-height: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .flex-item > button{
+        height: 2rem;
+        width: 6rem;
+        font-size: 0.9rem;
+    }
+
+    .brands {
+        position: relative;
+        top: 160%;
+        left: 50%;
+        transform: translate(-50%,70%);
+        
+    }
+
+    .brands-container > .content > .subtitle {
+        font-size: 1rem;
+        word-spacing: 0.1rem;
+    }
+
+    .brands-container > .box > .flex-item {
+        font-size: 1.5rem;
+        
+    }
+
+    .stories{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,90%);
+    }
+
+    .stories-container > .content > .subtitle {
+        font-size: 1rem;
+        word-spacing: 0.1rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        grid-row-gap: 5rem;
+    }
+
+    .grid-item > h3 {
+        font-size: 1rem;
+    }
+
+    .grid-item > p {
+        font-size: 0.8rem;
+    }
+    
+    .image-block img {
+        height: 10rem; 
+        width: 15rem;
+    }
+
+    .learn {
+        height: 7rem;
+        transform: translate(0%,1315%);
+    }
+
+    .learn-more {
+        flex-direction: column;
+        position: relative;
+        height: 7rem;
+        color: #fff;
+    }
+
+    .learn-more > h3 {
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .learn-more button {
+        margin-top: 1rem;
+        width: 6rem;
+        height: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-container {
+        position: relative;
+        transform: translate(-50%,235%);
+    }
+
+    .footer-content > p {
+        word-wrap: break-word;
+        font-size: 0.9rem;
+    }
+
+    .footer-content > span {
+        font-size: 0.9rem;
+    }
+}
